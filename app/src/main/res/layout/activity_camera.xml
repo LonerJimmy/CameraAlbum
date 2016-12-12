@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sll_camera"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <epiboly.loner.photo.widget.CameraSurfaceView
+            android:id="@+id/csv_camera"
+            android:layout_above="@+id/rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:alpha="0.7"
+            android:orientation="horizontal"
+            android:layout_above="@+id/rl_bottom">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_border"/>
+
+            <ImageView
+                android:id="@+id/iv_return"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_error"
+                android:layout_marginTop="@dimen/spacing_major"
+                android:layout_marginLeft="@dimen/spacing_major"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/black"
+            android:orientation="horizontal"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp">
+
+            <TextView
+                android:id="@+id/tv_photo_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/spacing_major"
+                android:text="@string/camera_cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_minor" />
+
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:src="@drawable/qc_shutter" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

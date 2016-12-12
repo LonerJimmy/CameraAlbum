@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Loner" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="LonerFullScreen" parent="Loner">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

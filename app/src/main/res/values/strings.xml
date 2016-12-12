@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Photo</string>
+
+    <string name="camera_cancel">取消</string>
+    <string name="camera_take_again">重新拍摄</string>
+    <string name="camera_submit">提交照片</string>
+
+    <string name="camera_require">请将身份证国徽面置于此区域，并对齐拍照框边缘</string>
+
+    <string name="bank_account">提交银行流水账号</string>
+    <string name="bank_title">请完整提供近三个月银行流水，首页需显示户名。</string>
+
+    <string name="toast">最多可以选择上传8张图片</string>
+</resources>

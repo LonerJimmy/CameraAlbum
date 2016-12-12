@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_grey"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/spacing_major"
+        android:paddingTop="30dp"
+        android:text="@string/bank_title"
+        android:textColor="@color/grey"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="14dp"
+        android:paddingLeft="11dp"
+        android:text="@string/bank_account"
+        android:textColor="@color/grey"
+        android:textSize="12sp" />
+
+    <GridView
+        android:id="@+id/gv_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:horizontalSpacing="19dp"
+        android:numColumns="4"
+        android:paddingBottom="30dp"
+        android:paddingTop="@dimen/spacing_major"
+        android:verticalSpacing="11dp"></GridView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_grey">
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/btn_grey"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:paddingBottom="14dp"
+            android:paddingTop="13dp"
+            android:text="确定"
+            android:textColor="@color/blue"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>
